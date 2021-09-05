@@ -52,6 +52,9 @@ document.querySelector("#voices").addEventListener("change", () => {
 document.querySelector("#start").addEventListener("click", () => {
     speech.text = document.querySelector("textarea").value;
     window.speechSynthesis.speak(speech);
+     if (speech.text === '') {
+        alert('please enter some text')
+    }
 });
 
 document.querySelector("#pause").addEventListener("click", () => {
