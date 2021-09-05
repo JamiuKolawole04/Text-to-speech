@@ -65,4 +65,5 @@ document.querySelector("#resume").addEventListener("click", () => {
 
 document.querySelector("#cancel").addEventListener("click", () => {
     window.speechSynthesis.cancel();
+    document.querySelector("textarea").value = "";
 });
